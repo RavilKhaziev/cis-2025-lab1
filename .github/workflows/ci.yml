@@ -86,14 +86,6 @@ jobs:
         ref: gh-pages
         path: gh-pages
     
-    - name: Get Allure history from gh-pages
-      if: always()
-      continue-on-error: true
-      uses: actions/checkout@v4
-      with:
-        ref: gh-pages
-        path: gh-pages
-    
     - name: Upload Allure Report
       if: always()
       uses: actions/upload-artifact@v4
