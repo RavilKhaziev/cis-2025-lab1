@@ -13,7 +13,7 @@ describe('App', () => {
     const user = userEvent.setup()
     render(<App />)
     
-    const button = screen.getByRole('button', { name: /count is/i })
+    const button = screen.getByRole('button', { name: /count is /i })
     expect(button).toHaveTextContent('count is 0')
     
     await user.click(button)
