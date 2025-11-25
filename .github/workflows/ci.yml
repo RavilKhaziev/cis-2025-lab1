@@ -60,8 +60,7 @@ jobs:
     
     - name: Download Allure CLI
       run: |
-        wget -q https://github.com/allure-framework/allure2/releases/download/2.24.1/allure-
-        2.24.1.tgz
+        wget -q https://github.com/allure-framework/allure2/releases/download/2.24.1/allure-2.24.1.tgz
         tar -zxvf allure-2.24.1.tgz
         sudo mv allure-2.24.1 /opt/allure
         sudo ln -sf /opt/allure/bin/allure /usr/local/bin/allure
